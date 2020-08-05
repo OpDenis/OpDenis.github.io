@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+    <title>Форма</title>
+</head>
+<body>
+    <form id="myForm" class="form" method="POST">
+        <input class="form__item" type="text" required placeholder="Фамилия*">
+        <input class="form__item" type="text" required placeholder="Имя*">
+        <input class="form__item" type="text" placeholder="Отчество">
+        <div class="form__block">
+            <span class="form__item_title">Дата рождения*</span>
+            <input class="form__item" type="date" required >
+        </div>
+        <div class="form__block">
+            <span class="form__item_title">Номер телефона</span>
+            <input class="form__item" type="tel" value="7" maxlength="11">
+        </div>
+        <input class="form__item" type="text" placeholder="Пол">
+        <div class="form__block">
+            <span class="form__item_title">Группа клиентов*</span>
+            <select class="form__select" multiple required>
+                <option class="form__option">VIP</option>
+                <option class="form__option">Проблемные</option>
+                <option class="form__option">ОМС</option>
+            </select>
+        </div>
+        <div class="form__block">
+            <span class="form__item_title">Лечащий врач</span>
+            <select class="form__select">
+                <option>Иванов</option>
+                <option>Захаров</option>
+                <option>Чернышева</option>
+            </select>
+        </div>
+        <label> 
+            <input type="checkbox" name="SMS" value="yes">
+            <span class="form__item_title">Не отправлять СМС</span>
+        </label>
+        <input class="form__item" type="number" placeholder="Индекс">
+        <input class="form__item" type="text" placeholder="Страна">
+        <input class="form__item" type="text" placeholder="Область">
+        <input class="form__item" type="text" required placeholder="Город*">
+        <input class="form__item" type="text" placeholder="Улица">
+        <input class="form__item" type="text" placeholder="Дом">
+        <div class="form__block">
+            <span class="form__item_title">Тип документа*</span>
+            <select class="form__select" required>
+                <option>Паспорт</option>
+                <option>Свидетельство о рождении</option>
+                <option>Вод. удостоверение</option>
+            </select>
+        </div>
+        <input class="form__item" type="text" placeholder="Серия">
+        <input class="form__item" type="text" placeholder="Номер">
+        <input class="form__item" type="text" placeholder="Кем выдан">
+        <div class="form__block">
+            <span class="form__item_title">Дата выдачи*</span>
+            <input class="form__item" type="date" required >
+        </div>
+        <button class="form__confirm">Подтвердить</button>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>

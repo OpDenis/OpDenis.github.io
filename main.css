@@ -1,0 +1,44 @@
+.form {
+  margin: 0 auto;
+  margin-top: 5vh;
+  width: 25%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 5vh 5vw 5vw 5vh;
+  background: orange;
+  border-radius: 2%;
+}
+.form__item, .form__confirm, .form__select {
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 7%;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  min-height: 42px;
+  border: 2px solid #BC9CFF;
+  border-radius: 5%;
+  color: gray;
+  outline: 2px solid #BC9CFF;
+  background: #d7d7d7;
+}
+.form__option {
+  margin-bottom: 10px;
+}
+.form__block {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.form__item_title {
+  font-family: "Rowdies", cursive;
+}
+.form__confirm {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  padding-left: 0;
+  outline: none;
+  cursor: pointer;
+}
